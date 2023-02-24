@@ -2,7 +2,7 @@ import { useState } from "react";
 import { getQuestions } from "../service";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import { QuizzResults } from "./QuizzResults";
+import QuizzResults from "./QuizzResults";
 
 const QuizzGame = () => {
 
@@ -104,7 +104,7 @@ const QuizzGame = () => {
                     ))}
                   </select>
                 </div>
-                <button type="submit" className='className="mx-auto bg-sky-500 hover:bg-sky-800 rounded-full p-2 px-5 text-xl font-medium text-white m-4'> Comenzar</button>
+                <button type="submit" className='className="mx-auto bg-sky-500 hover:bg-sky-800 rounded-full p-2 px-5 text-xl font-medium text-white m-4'> Start Game</button>
               </form>
             </div>
           ) : (
